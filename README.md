@@ -17,4 +17,6 @@ This repository includes teaching materials which I contributed to during my Com
 
 **6-)** [`Summer 2023-2024 - Digital Logic Design and Lab with Verilog HDL (BIL265/L)`](digital-logic-design-bil265-l/summer23-24)
 
-**7-)** [`Ongoing - Fall 2024-2025 - Digital Logic Design and Lab with Verilog HDL (BIL265/L)`](digital-logic-design-bil265-l/fall24-25)
+**7-)** [`Fall 2024-2025 - Digital Logic Design and Lab with Verilog HDL (BIL265/L)`](digital-logic-design-bil265-l/fall24-25)
+
+**8-)** [`Ongoing - Spring 2024-2025 - Digital Logic Design and Lab with Verilog HDL (BIL265/L)`](digital-logic-design-bil265-l/spring24-25)
