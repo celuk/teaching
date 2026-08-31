@@ -1,0 +1,32 @@
+Run1:
+
+gem5/build/X86/gem5.opt simulasyon.py \
+	--program="./coremark.exe" \
+	--dosya_yolu="./cikti1" \
+	--tablo_boyutu=1024 \
+	--gecmis_uzunlugu=3 \
+	--sayac_bit_sayisi=2 \
+	--indeksleme_politikasi="GSHARE" \
+	--baslangic_durumu="ATLAMAZ"
+
+Run2:
+
+gem5/build/X86/gem5.opt simulasyon.py \
+	--program="./coremark.exe" \
+	--dosya_yolu="./cikti2" \
+	--tablo_boyutu=4096 \
+	--gecmis_uzunlugu=30 \
+	--sayac_bit_sayisi=8 \
+	--indeksleme_politikasi="GSELECT" \
+	--baslangic_durumu="ATLAR"
+
+Run3:
+
+gem5/build/X86/gem5.opt simulasyon.py \
+	--program="./coremark.exe" \
+	--dosya_yolu="./cikti3" \
+	--tablo_boyutu=4096 \
+	--gecmis_uzunlugu=30 \
+	--sayac_bit_sayisi=8 \
+	--indeksleme_politikasi="GSHARE" \
+	--baslangic_durumu="ATLAMAZ"

@@ -22,3 +22,7 @@ This repository includes teaching materials which I contributed to during my Com
 **8-)** [`Spring 2024-2025 - Digital Logic Design and Lab with Verilog HDL (BIL265/L)`](digital-logic-design-bil265-l/spring24-25)
 
 **9-)** [`Summer 2024-2025 - Digital Logic Design and Lab with Verilog HDL (BIL265/L)`](digital-logic-design-bil265-l/summer24-25)
+
+**10-)** [`Fall 2025-2026 - Computer Architecture and Organization (BIL361)`](comp-arch-bil361/fall25-26)
+
+**11-)** [`Spring 2025-2026 - Computer Architecture and Organization (BIL361)`](comp-arch-bil361/spring25-26)

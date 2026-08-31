@@ -1,0 +1,45 @@
+
+example.o:	file format elf32-littleriscv
+
+Disassembly of section .text:
+
+00000000 <.text>:
+       0: b7 11 00 00  	lui	x3, 0x1
+       4: f7 52 40 01  	movu	x5, x0, 0x14
+       8: 77 53 70 00  	movu	x6, x0, 0x7
+       c: f7 53 30 00  	movu	x7, x0, 0x3
+      10: 17 0d 00 00  	auipc	x26, 0x0
+      14: 93 88 81 00  	addi	x17, x3, 0x8
+      18: 23 a0 51 00  	sw	x5, 0x0(x3)
+      1c: 23 a2 61 00  	sw	x6, 0x4(x3)
+      20: 03 a2 01 00  	lw	x4, 0x0(x3)
+      24: 33 84 62 00  	add	x8, x5, x6
+      28: b3 84 62 40  	sub	x9, x5, x6
+      2c: 33 f5 62 00  	and	x10, x5, x6
+      30: 93 95 12 00  	slli	x11, x5, 0x1
+      34: 33 d6 74 40  	sra	x12, x9, x7
+      38: 93 46 33 00  	xori	x13, x6, 0x3
+      3c: 13 07 20 00  	addi	x14, x0, 0x2
+      40: 93 b7 42 06  	sltiu	x15, x5, 0x64
+      44: b3 ad 63 00  	slt	x27, x7, x6
+      48: 33 be 63 00  	sltu	x28, x7, x6
+      4c: 63 d2 62 02  	bge	x5, x6, 0x70 <.text+0x70>
+      50: 63 08 07 0a  	beq	x14, x0, 0x100 <.text+0x100>
+      54: 77 58 20 00  	movu	x16, x0, 0x2
+      58: f7 18 53 04  	srt.cmp.st	x17, x6, x5
+      5c: 7f f0 18 a1  	mac.ld.st	x17, x17, 0x25c, 0x2
+      60: 13 08 f8 ff  	addi	x16, x16, -0x1
+      64: 63 00 08 08  	beq	x16, x0, 0xe4 <.text+0xe4>
+      68: e3 58 08 fe  	bge	x16, x0, 0x58 <.text+0x58>
+      6c: 77 e9 38 08  	ld.cmp.max	x18, x17, x3
+      70: f7 09 62 00  	sub.abs	x19, x4, x6
+      74: 77 ca 59 00  	avg.flr	x20, x19, 0x5
+      78: f7 fa c2 10  	srch.bit.ptrn	x21, x5, x12
+      7c: 77 ab 59 55  	sel.part	x22, x19, 0x0
+      80: 7f 80 4b 55  	sel.cnd	x23, x20, 0x1c0, 0x1
+      84: ef 00 80 00  	jal	x1, 0x8c <.text+0x8c>
+      88: 13 8c c1 00  	addi	x24, x3, 0xc
+      8c: 77 9c 62 04  	srt.cmp.st	x24, x5, x6
+      90: f7 6c 3c 08  	ld.cmp.max	x25, x24, x3
+      94: e7 8f 40 02  	jalr	x31, 0x24(x1)
+      98: 7f 80 10 14  	sel.cnd	x1, x1, 0x1d8, 0x0

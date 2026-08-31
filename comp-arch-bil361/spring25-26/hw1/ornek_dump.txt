@@ -1,0 +1,30 @@
+ornek.o:	file format elf32-littleriscv
+
+Disassembly of section .text:
+
+00000000 <.text>:
+       0: b7 22 00 00  	lui	t0, 0x2
+       4: 13 83 02 20  	addi	t1, t0, 0x200
+       8: 97 03 00 00  	auipc	t2, 0x0
+       c: 77 34 e0 7f  	degil.yukle	s0, zero, 0x7fe
+      10: 93 64 f4 0f  	ori	s1, s0, 0xff
+      14: 23 20 93 00  	sw	s1, 0x0(t1)
+      18: 03 25 03 00  	lw	a0, 0x0(t1)
+      1c: b3 05 75 00  	add	a1, a0, t2
+      20: 33 86 55 40  	sub	a2, a1, t0
+      24: b3 46 96 00  	xor	a3, a2, s1
+      28: 33 d7 76 40  	sra	a4, a3, t2
+      2c: 93 57 27 00  	srli	a5, a4, 0x2
+      30: 33 a8 d7 00  	slt	a6, a5, a3
+      34: b3 38 78 00  	sltu	a7, a6, t2
+      38: 13 a9 58 00  	slti	s2, a7, 0x5
+      3c: f7 29 59 95  	bit.cevir	s3, s2, 0x1
+      40: 77 53 33 45  	yuk.ve.yaz	t1, t1, s3
+      44: 63 1e 18 1b  	bne	a6, a7, 0x200 <.text+0x200>
+      48: 63 4c 39 7b  	blt	s2, s3, 0x800 <.text+0x800>
+      4c: 7f 0a 00 08  	dortkat.atla	s4, 0x80
+      50: 77 78 19 41  	sinir.knt	s2, a7, 0x10, 0x1
+      54: e7 8a 02 00  	jalr	s5, t0
+      58: ef 00 00 00  	jal	0x58 <.text+0x58>
+      5c: 77 70 6b c2  	sinir.knt	s6, t1, 0x20, 0x3
+      60: ef e0 cf ff  	jal	0xffffe85c <.text+0xffffffffffffe85c>
